@@ -27,7 +27,7 @@ func main() {
 	}
 
 	// Serve requests
-	if err := server.ServeStdio(fss); err != nil {
+	if err := server.ServeHTTP(fss); err != nil {
 		log.Fatalf("Server error: %v", err)
 	}
 }
